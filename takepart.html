@@ -12,14 +12,15 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
     <!-- Place favicon.ico in the root directory -->
 <!-- PushAlert -->
-        <script type="text/javascript">
-                (function(d, t) {
-                        var g = d.createElement(t),
-                        s = d.getElementsByTagName(t)[0];
-                        g.src = "https://cdn.pushalert.co/integrate_f73b31aae8854ad2af3780658a8a3d65.js";
-                        s.parentNode.insertBefore(g, s);
-                }(document, "script"));
-        </script>
+       <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  var OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "76feba14-7b60-4915-97cd-8f987600d59c",
+    });
+  });
+</script>
         <!-- End PushAlert -->
     <!-- CSS here -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -113,10 +114,16 @@
         </div>
        
     </div>
-    <!-- slider_area_end -->
+    <!-- slider_area_end 
+        <script type="application/json" src="manifest.json">
 
-    <!-- ================ contact section start ================= -->
-    <br><br><br><br><center><h2>Todavia no hemos implementado un metodo de como subir tu video a nuestros servidores, te avisamos cuando implementemos un sistema de envio. Haz click abajo!</h2></center>
+    < ================ contact section start ================= -->
+
+    <br><br><br><br><center><h2>Todavia no hemos implementado un metodo de como subir tu video a nuestros servidores, te avisamos cuando implementemos un sistema de envio. Haz click abajo!!</h2></center><!-- PushAlert -->
+        <<!-- PushAlert -->
+        
+        <!-- End PushAlert -->
+<!--End PushAlert -->
     <!-- ================ contact section end ================= -->
     
     <!-- footer_start -->
