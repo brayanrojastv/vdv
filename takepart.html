@@ -117,8 +117,33 @@
         <script type="application/json" src="manifest.json">
 
     < ================ contact section start ================= -->
-
-    <br><br><br><center><h2>Todavia no hemos implementado un metodo de como subir tu video a nuestros servidores, te avisamos cuando implementemos un sistema de envio. Haz click abajo!!</h2></center><!-- PushAlert -->
+ <button id="hello-world">Send "Hello world"</button>
+  <widgetbot
+    server="299881420891881473"
+    channel="355719584830980096"
+    id="embed"
+    height="300"
+    width="500"
+  >
+  </widgetbot>
+  <script src="https://unpkg.com/@widgetbot/html-embed"></script> 
+ 
+  <script>
+    const embed = document.getElementById('embed')
+ 
+    document.getElementById('hello-world').addEventListener('click', () => {
+      embed.emit(
+        'sendMessage',
+        `Hello world! from \`@widgetbot/html-embed!\`\n` +
+          `<https://codesandbox.io/s/y32o59nn0v>`
+      )
+    })
+ 
+    embed.on('signIn', data => {
+      console.log(`You've signed in as ${data.name}`)
+    })
+  </script> 
+    <!--<br><br><br><center><h2>Todavia no hemos implementado un metodo de como subir tu video a nuestros servidores, te avisamos cuando implementemos un sistema de envio. Haz click abajo!!</h2></center>-->
         <!-- JS here -->
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="js/vendor/jquery-1.12.4.min.js"></script>
