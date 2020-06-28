@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html class="no-js" lang="zxx">
 
 <head>
     <meta charset="utf-8">
@@ -12,14 +12,15 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
     <!-- Place favicon.ico in the root directory -->
 <!-- PushAlert -->
- <script type="text/javascript">
-                (function(d, t) {
-                        var g = d.createElement(t),
-                        s = d.getElementsByTagName(t)[0];
-                        g.src = "https://cdn.pushalert.co/integrate_f73b31aae8854ad2af3780658a8a3d65.js";
-                        s.parentNode.insertBefore(g, s);
-                }(document, "script"));
-        </script>
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  var OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "76feba14-7b60-4915-97cd-8f987600d59c",
+    });
+  });
+</script>
         <!-- End PushAlert -->
     <!-- CSS here -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -32,6 +33,7 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/slicknav.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="pasos.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
@@ -113,8 +115,29 @@
         </div>
        
     </div>
-    <br><br><br><br><center><a href="https://discord.gg/ACPQ7jJ" class="genric-btn primary-border e-large">Inscríbete Ahora!</a></center>
-    <!--<br><br><br><center><h2>Todavia no hemos implementado un metodo de como subir tu video a nuestros servidores, te avisamos cuando implementemos un sistema de envio. Haz click abajo!!</h2></center>-->
+    <!-- slider_area_end 
+        <script type="application/json" src="manifest.json">
+
+    < ================ contact section start ================= -->
+
+    <madebybrayanrojastv>
+        <div id="pasosENVIAR">
+            <center>
+                <h1>Paso a Paso de como participar en Voces de Vida en Casa</h1>
+                    <span>Aqui te presento de como participar al evento virtual de Voces de Vida en solo un tutorial, el tutorial incluye como enviar tu video en celular y computadora.</span>
+                <h1 class="tutorial-text">Tutorial:</h1>
+                
+                <p>Recuerden que tienen que enviarlo al correo vocesdevidacah@gmail.com</p>
+            </center>
+        </div>
+    </madebybrayanrojastv>
+
+    <!-- ================ contact section end ================= -->
+    
+    <!-- footer_start -->
+    
+    <!-- footer_end -->
+        
         <!-- JS here -->
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="js/vendor/jquery-1.12.4.min.js"></script>
